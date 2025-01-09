@@ -1,4 +1,5 @@
 ﻿using System;
+using Program;
 
 namespace Program
 {
@@ -13,7 +14,7 @@ namespace Program
             {
                 array[i] = rand.Next(0, 100);
             }
-            int resultOfMethod = Program.Methods.SumArray(array);
+            int resultOfMethod = Methods.SumArray(array);
             Console.WriteLine($"Сумма всех чисел в массиве: {resultOfMethod}");
 
             
