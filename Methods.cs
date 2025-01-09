@@ -16,5 +16,18 @@ namespace Program
             }
             return sum;
         } 
+
+        public static int MaxNumOfArray(int[] array)
+        {
+            int max = 0;
+            foreach(int i in array)
+            {
+                if(i > max)
+                {
+                    max = i;
+                }
+            }
+            return max;
+        }
     }
 }

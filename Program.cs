@@ -15,7 +15,9 @@ namespace Program
                 array[i] = rand.Next(0, 100);
             }
             int resultOfMethod = Methods.SumArray(array);
+            int resultMaxOfMethod = Methods.MaxNumOfArray(array);
             Console.WriteLine($"Сумма всех чисел в массиве: {resultOfMethod}");
+            Console.WriteLine($"Максимальное число в этом массиве: {resultMaxOfMethod}");
 
             
         }
