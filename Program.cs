@@ -4,18 +4,6 @@ namespace Program
 {
     class Lesson6
     {
-        public static int SumArray(int[] array)
-        {
-            int sum = 0;
-            int index = 0;
-            foreach(int i in array)
-            {
-                sum += i;
-                Console.WriteLine($"array[{index}] - {i}");
-                index++;
-            }
-            return sum;
-        } 
         static void Main(string[] args)
         {
             //Задача 1
@@ -25,8 +13,10 @@ namespace Program
             {
                 array[i] = rand.Next(0, 100);
             }
-            int resultOfMethod = SumArray(array);
+            int resultOfMethod = Program.Methods.SumArray(array);
             Console.WriteLine($"Сумма всех чисел в массиве: {resultOfMethod}");
+
+            
         }
     }
 }
