@@ -18,7 +18,12 @@ namespace Program
             Console.WriteLine($"Сумма всех чисел в массиве: {resultOfMethod}");
             // Задание 2
             int resultMaxOfMethod = Methods.MaxNumOfArray(array);            
-            Console.WriteLine($"Максимальное число в этом массиве: {resultMaxOfMethod}");            
+            Console.WriteLine($"Максимальное число в этом массиве: {resultMaxOfMethod}");
+
+            // Задание 3
+            int numN = 10;
+            int resultNumN = Methods.SumToNumN(numN);
+            Console.WriteLine($"Сумма чисел от 1 до {numN} равен {resultNumN}.");
         }
     }
 }

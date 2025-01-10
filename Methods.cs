@@ -29,5 +29,11 @@ namespace Program
             }
             return max;
         }
+
+        public static int SumToNumN(int numN)
+        {
+            if(numN == 1) return numN;
+            return numN + SumToNumN(numN - 1);
+        }
     }
 }
